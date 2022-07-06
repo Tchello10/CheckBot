@@ -11,7 +11,7 @@ huddle26 = '26HR'
 huddle27 = '27HR'
 numeroSala = 1
 
-#Testes ou coisas mal sucedidas:
+#Zona de Testes
     #paraBot = 0
     #print(pyautogui.position())
 
@@ -55,10 +55,10 @@ for o in range(salas24):
         numeroSala = numeroSala + 4
 
     if numeroSala<10:
-        pyautogui.write(str(huddle26)+"0"+str(numeroSala))
+        pyautogui.write(str(huddle24)+"0"+str(numeroSala))
     
     elif numeroSala>=10:
-        pyautogui.write(str(huddle26)+str(numeroSala))
+        pyautogui.write(str(huddle24)+str(numeroSala))
     
     for k in range(11):
         pyautogui.press('tab')
@@ -229,6 +229,14 @@ for n in range(salas27):
     pyautogui.keyUp('ctrl')
 
     numeroSala = numeroSala + 1
+
+#zerando as variáveis para garantir o funcionamento
+numeroSala = 1
+i = 0
+j = 0
+k = 0
+l = 0
+m = 0
 
 #Prepara as abas para conferencia
 for o in range(totalSalas + 1):
