@@ -18,5 +18,3 @@ for o in range(totalSalas + 1):
     pyautogui.keyDown('ctrl')
     pyautogui.press('pgdn')
     pyautogui.keyUp('ctrl')
-
-
