@@ -25,10 +25,10 @@ time.sleep(5)
 #Abre todas as guias do checklist
 for j in range(totalSalas):
     pyautogui.middleClick(x=339, y=82)
-    time.sleep(0.20)
+    time.sleep(0.30)
 pyautogui.click(x=339, y=82)
 
-time.sleep(5)
+time.sleep(15)
 
 #Preenche o 24º andar
 for o in range(salas24):
