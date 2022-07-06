@@ -81,6 +81,8 @@ for i in range(salas26):
     #Demarcação de casos especiais de preenchimento
     if numeroSala == 3:
         pyautogui.write('Reservada para Elaine')
+    elif numeroSala == 4:
+        pyautogui.write('Sala bloqueada')
     elif numeroSala == 10:
         pyautogui.write('Sala bloqueada')
     elif numeroSala == 11:
@@ -143,7 +145,7 @@ for n in range(salas27):
 
     pyautogui.press('tab')
 
-    pyautogui.write('Bloqueada para reforma')
+    #pyautogui.write('Bloqueada para reforma')
 
     pyautogui.press('tab')
 
