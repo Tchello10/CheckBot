@@ -161,8 +161,9 @@ for i in range(salas26):
         pyautogui.write('Sala bloqueada')
     elif numeroSala == 11:
         pyautogui.write('Sala bloqueada')
-    elif numeroSala == 13:
-        pyautogui.write('Sala bloqueada')
+        
+    # elif numeroSala == 13:
+    #     pyautogui.write('Sala bloqueada')
     
     time.sleep(0.15)
 
