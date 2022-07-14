@@ -10,6 +10,8 @@ huddle24 = '24HR'
 huddle26 = '26HR'
 huddle27 = '27HR'
 numeroSala = 1
+failsafe = 15
+enterbetween = 0.15
 
 #Zona de Testes
     #paraBot = 0
@@ -28,7 +30,7 @@ for j in range(totalSalas):
     time.sleep(0.30)
 pyautogui.click(x=339, y=82)
 
-time.sleep(15)
+time.sleep(failsafe)
 
 #Preenche o 24º andar
 for o in range(salas24):
@@ -63,26 +65,26 @@ for o in range(salas24):
     for k in range(11):
         pyautogui.press('tab')
         pyautogui.press('space')
-        time.sleep(0.15)
+        time.sleep(enterbetween)
     
     pyautogui.press('tab')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.write('Ok')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
     pyautogui.press('space')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
 
     #Demarcação de casos especiais de preenchimento
     
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
 
@@ -135,20 +137,20 @@ for i in range(salas26):
     for k in range(11):
         pyautogui.press('tab')
         pyautogui.press('space')
-        time.sleep(0.15)
+        time.sleep(enterbetween)
     
     pyautogui.press('tab')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.write('Ok')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
     pyautogui.press('space')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
 
@@ -161,11 +163,11 @@ for i in range(salas26):
         pyautogui.write('Sala bloqueada')
     elif numeroSala == 11:
         pyautogui.write('Sala bloqueada')
-        
+
     # elif numeroSala == 13:
     #     pyautogui.write('Sala bloqueada')
     
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
 
@@ -209,16 +211,16 @@ for n in range(salas27):
     
     pyautogui.press('tab')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.write('Ok')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
     pyautogui.press('space')
 
-    time.sleep(0.15)
+    time.sleep(enterbetween)
 
     pyautogui.press('tab')
 
